@@ -1,0 +1,42 @@
+*{
+  font-family: Avenir, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#tete{
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 10px #bbb;
+  background-color: #fff;
+}
+
+#ecran{
+  display: flex;
+}
+
+#gauche{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 1%;
+  box-shadow: 0px 0px 10px #bbb;
+  background-color: #fff;
+}
+
+#message{
+  margin-top: 1%;
+}
+
+#haut{
+}
+
+#bas{
+}
+
+#hautetbas{
+  margin-left: 5%;
+}
+
+
+
