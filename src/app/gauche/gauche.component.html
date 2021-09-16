@@ -1,0 +1,17 @@
+<div>
+<p>Personnes actives</p>
+
+  <!--En cas d’absence de personnes, un message adapté apparait à la place de la liste des
+  personnes actives.-->
+
+<div *ngIf="lstPseudo.length !== 0">
+
+  <ul>
+    <li *ngFor="let chaquePseudo of lstPseudo">{{chaquePseudo.id}} : <a href="#">{{chaquePseudo.pseudo}}</a></li>
+    <br>
+  </ul>
+</div>
+</div>
+<div *ngIf="lstPseudo.length === 0">
+  Coucou, il y a quelqu'un ?
+</div>

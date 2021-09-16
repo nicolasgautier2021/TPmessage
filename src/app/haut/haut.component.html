@@ -1,0 +1,33 @@
+<!--<div>
+  <p>
+    Paul a écrit le 16/09/2021 à 09:56 :
+  </p>
+  <fieldset>
+    <p>
+      Salut !!
+    </p>
+  </fieldset>
+  </div>-->
+
+<div *ngIf="lstMessage.length !== 0">
+  <ul>
+
+    <li *ngFor="let chaqueMessage of lstMessage">
+
+      <p>
+
+        {{chaqueMessage.id}} - {{chaqueMessage.pseudo}} a écrit le {{chaqueMessage.date}} :
+
+      </p>
+      <fieldset>
+        <p>
+      {{chaqueMessage.texte}}
+      </p>
+      </fieldset>
+    </li>
+  </ul>
+</div>
+
+
+
+
